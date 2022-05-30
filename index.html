@@ -11,6 +11,54 @@
   </head>
   <body>
     <div class="ageCalculator">
+      <form data-age-calculator-form>
+        <div>
+          <label for="birthDateInput">Date of Birth</label>
+          <input type="date" id="birthDateInput" />
+        </div>
+        <div>
+          <label for="currentDateInput">Today's Date</label>
+          <input type="date" id="currentDateInput" />
+        </div>
+        <div>
+          <button type="submit">Calculate Age</button>
+        </div>
+        <div>
+          <h2>
+            <span data-age-result="main"></span>
+          </h2>
+          <table>
+            <tr>
+              <td>Age In Years</td>
+              <td><span data-age-result="years"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Months</td>
+              <td><span data-age-result="months"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Weeks</td>
+              <td><span data-age-result="weeks"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Days</td>
+              <td><span data-age-result="days"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Hours</td>
+              <td><span data-age-result="hours"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Minutes</td>
+              <td><span data-age-result="minutes"></span></td>
+            </tr>
+            <tr>
+              <td>Age In Seconds</td>
+              <td><span data-age-result="seconds"></span></td>
+            </tr>
+          </table>
+        </div>
+      </form>
     </div>
   </body>
 </html>
