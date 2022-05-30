@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  --body-bg: hsl(200, 10%, 10%);
+  --body-text: hsl(200, 0%, 100%);
+  --accent-color: hsl(200, 100%, 50%);
+  --border-primary: hsl(200, 20%, 20%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --body-bg: hsl(200, 95%, 95%);
+    --body-text: hsl(200, 0%, 0%);
+    --border-primary: hsl(200, 20%, 85%);
+    --accent-color: hsl(200, 100%, 50%);
+  }
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-text);
+}
