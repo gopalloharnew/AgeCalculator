@@ -31,11 +31,20 @@ function formatNumber(number) {
 // main functions
 function submitAgeCalculatorForm(e) {
   if (e) e.preventDefault()
-  let age = calculateAge(
-    new Date(birthDateInput.value),
-    new Date(currentDateInput.value)
-  )
-  paintAge(age)
+
+  // Animation
+  ageResultWraper.classList.add("transparent")
+  setTimeout(() => {
+    ageResultWraper.classList.remove("transparent")
+  }, 300)
+
+  setTimeout(() => {
+    let age = calculateAge(
+      new Date(birthDateInput.value),
+      new Date(currentDateInput.value)
+    )
+    paintAge(age)
+  }, 200)
 }
 
 function paintAge(age) {
@@ -109,6 +118,7 @@ function setCurrentDate() {
 
 // selectors
 const ageCalculatorForm = document.querySelector("[data-age-calculator-form]")
+const ageResultWraper = document.querySelector("[data-age-result-wraper]")
 const currentDateInput = document.getElementById("currentDateInput")
 const birthDateInput = document.getElementById("birthDateInput")
 

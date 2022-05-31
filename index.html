@@ -11,23 +11,35 @@
   </head>
   <body>
     <div class="ageCalculator">
+      <h1 class="age-calculator-heading">Age Calculator</h1>
       <form data-age-calculator-form>
-        <div>
+        <div class="date-input-wraper">
           <label for="birthDateInput">Date of Birth</label>
-          <input type="date" id="birthDateInput" value="2000-01-01" required />
+          <input
+            type="date"
+            id="birthDateInput"
+            class="date-input"
+            value="2000-01-01"
+            required
+          />
         </div>
-        <div>
+        <div class="date-input-wraper">
           <label for="currentDateInput">Today's Date</label>
-          <input type="date" id="currentDateInput" required />
+          <input
+            type="date"
+            id="currentDateInput"
+            class="date-input"
+            required
+          />
         </div>
-        <div>
-          <button type="submit">Calculate Age</button>
+        <div class="calculate-button-wraper">
+          <button type="submit" class="calculate-button">Calculate Age</button>
         </div>
-        <div>
-          <h2>
+        <div class="age-result-wraper" data-age-result-wraper>
+          <h2 class="age-result-main">
             <span data-age-result="main"></span>
           </h2>
-          <table>
+          <table class="age-result-table">
             <tr>
               <td>Age In Years</td>
               <td><span data-age-result="years"></span></td>

@@ -1,0 +1,99 @@
+.ageCalculator {
+  width: calc(100% - 2rem);
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 0rem 1rem;
+  border: 1px solid var(--border-100);
+}
+
+.age-calculator-heading {
+  text-align: center;
+}
+
+.date-input-wraper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.date-input {
+  background-color: transparent;
+  border: 1px solid var(--border-100);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: inherit;
+  outline: none;
+  transition: border-color 250ms ease;
+  cursor: pointer;
+}
+
+.date-input:hover {
+  border-color: var(--border-200);
+}
+
+.date-input:focus {
+  border-color: var(--border-300);
+}
+
+.calculate-button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  background-color: var(--border-100);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 250ms ease, border-color 250ms ease;
+  outline: none;
+}
+
+.calculate-button:hover {
+  border-color: var(--border-300);
+}
+
+.calculate-button:focus-visible {
+  border-color: var(--accent-color);
+}
+
+.calculate-button-wraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* result */
+
+.age-result-wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 150ms ease;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.age-result-main {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--accent-color);
+}
+
+.age-result-table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.age-result-table td {
+  padding: 0.25rem;
+}
+
+.age-result-table tr {
+  border-bottom: 1px solid var(--border-100);
+}
